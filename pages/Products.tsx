@@ -95,10 +95,16 @@ export const Products: React.FC = () => {
           <div className="absolute right-0 bottom-0 top-0 w-1/3 hidden lg:flex items-center justify-center">
              <div className="w-full h-2/3 bg-slate-900 rounded-l-[3rem] border border-white/10 p-8 font-mono text-xs text-primary/80">
                 <p>// Solution_Architecture.js</p>
-                <p className="mt-4 text-white">const optimizeScale = (infra) => &#123;</p>
-                <p className="ml-4">return infra.pipe(</p>
-                <p className="ml-8 text-green-400">edgeComputing(),</p>
-                <p className="ml-8 text-green-400">automatedHealing()</p>
+<pre className="mt-4 w-full rounded-lg border border-white/10 bg-slate-900 p-4 text-xs text-white overflow-auto">
+  <code>{`// Solution_Architecture.js
+const optimizeScale = (infra) => {
+  return infra.pipe(
+    edgeComputing(),
+    // ...
+  );
+};`}</code>
+</pre>
+               <p className="ml-8 text-green-400">automatedHealing()</p>
                 <p className="ml-4">);</p>
                 <p className="">&#125;;</p>
              </div>
